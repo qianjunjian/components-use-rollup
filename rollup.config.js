@@ -22,7 +22,7 @@ export default {
       name: "index"
     },
   ],
-  external: id => id.includes('@babel/runtime') || id.includes('core-js'),
+  external: id => id.includes('@babel/runtime') || id.includes('core-js') || id.includes('lk-http-request'),
   plugins: [
     typescript(),
     resolve(),
